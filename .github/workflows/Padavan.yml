@@ -85,7 +85,7 @@ jobs:
         ls -l
     - name: 上传固件到Artifacts
       if: true
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ env.NAME }}
         path: ${{ env.IMAGES }}
